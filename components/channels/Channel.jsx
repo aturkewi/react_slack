@@ -5,15 +5,17 @@ class Channel extends Component{
   onClick(e){
     e.preventDefault();
     const {setChannel, channel} = this.props;
-    setChannel(channel)
+    setChannel(channel);
   }
 
   render(){
     const {channel} = this.props;
     return(
-      <li><a onClick={this.onClick.bind(this)}>
-        {channel.name}
-      </a></li>
+      <li>
+        <a onClick={this.onClick.bind(this)}>
+          {channel.name}
+        </a>
+      </li>
     )
   }
 }
@@ -23,4 +25,4 @@ Channel.propTypes = {
   setChannel: React.PropTypes.func.isRequired
 }
 
-export defaul Channel
+export default Channel

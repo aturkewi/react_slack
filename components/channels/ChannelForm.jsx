@@ -10,8 +10,9 @@ class ChannelForm extends Component{
   }
   render(){
     return(
-      <form onSubmit={this.props.onSubmit.bind(this)}>
-        <input type='text'
+      <form onSubmit={this.onSubmit.bind(this)}>
+        <input
+          type='text'
           ref='channel'
         />
       </form>
@@ -23,4 +24,4 @@ ChannelForm.propTypes = {
   addChannel: React.PropTypes.func.isRequired
 }
 
-export ChannelForm
+export default ChannelForm
