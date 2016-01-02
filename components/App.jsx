@@ -7,7 +7,7 @@ class App extends Component{
     super(props);
     this.state = {
       channels: [],
-      users: [{name: 'avi'},{name: 'jeff'}, {name:'ian'}, {name:'vinny'},{name:'deniz'}],
+      users: [{id:0, name: 'avi'},{id:1, name: 'jeff'}, {id:2, name:'ian'}, {id:3, name:'vinny'},{id:4, name:'deniz'}],
       activeChannel: {}
     }
   }
